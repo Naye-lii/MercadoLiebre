@@ -1,0 +1,25 @@
+.logo{
+    height: 8vw;
+}
+
+.img-producto{
+    height: 400px;
+}
+
+.banner{
+    width: 100vw;
+ }
+header{
+    font-family: sans-serif ;
+    color:black;
+    background-color: yellow;
+    width: 100vw;
+}
+body{
+    font-family: sans-serif;
+    
+}
+a{
+    color:black;
+    text-decoration: none;
+}
