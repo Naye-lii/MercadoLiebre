@@ -4,6 +4,7 @@
 
 body{
     font-family: 'Roboto', sans-serif; 
+    background-color: #eeeeee;
 }
 
 .main-header {
@@ -80,7 +81,99 @@ justify-content: space-between;
     }
 }
 
-@media (min-width: 1200px) {
+/*Aquí comienzan los estilos para los productos*/
+.img-productos {
+    padding: 0 15px;
+    width: 100%;
+}
+
+.sec-producto {
+    padding: 15px;
+    position: relative;
+    font-size: 30px;
+    font-weight: 400;
+    }
+
+.datos-producto{
+    display: flex;
+    margin: auto;
+    background-color: #ffffff;
+}
+
+.datos-producto h2{
+background-color: rgba(0, 0, 0, 0, 0.5);
+color: #ffffff;
+margin: 0;
+padding: 15px;
+position: absolute;
+left: 0;
+bottom: 0;
+width: 100%;
+}
+
+.datos-producto h3{
+    color: #000;
+    font-size: 1200;
+    font-weight: 500;
+    }
+
+.sec-producto h4{
+    color: #32cd32;
+    font-size: small;
+    font-weight: 400;
+    }
+
+    .sec-producto i{
+        color: #32cd32;
+        border-radius: 100%;
+        background-color: #ffffff;
+        justify-self: flex-end;
+        }
+/*Aquí comienza el footer*/
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 30px;
+}
+
+.container i{
+    width: 600px;
+    height: auto;
+    text-align: center;
+    color:midnightblue;
+    margin: auto;
+    padding: 20px;
+}
+
+.container ul{
+    list-style: none;
+}
+
+.container h4{
+    font-size: 24;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container p{
+    font-size: 12;
+    color: black;
+    font-weight: 350;
+    text-align: center;
+}
+
+.copywright{
+   color: #444444; 
+   font-weight: 300;
+   text-align: center;
+padding: 20px;
+}
+
+
+@media (min-width: 860px) {
 .main-header-top-bar, .main-navbar {
     max-width: 1200px;
     margin: auto;
@@ -109,5 +202,43 @@ margin: 0 10px;
    font-size: 19px; 
 }
 
+/*Aquí comienza el footer*/
 
+.container {
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+.left{
+    order: 1;
+    flex-basis: 100%;
+}
+
+.middle{
+    order: 2;
+    flex-basis: 100%;
+}
+}
+
+.right{
+    order: 2;
+    flex-basis: 100%;
+}
+
+.container p{
+    font-size: 12;
+    color: black;
+    font-weight: 350;
+    text-align: center;
+}
+
+.copywright{
+   color: #444444; 
+   font-weight: 300;
+   text-align: center;
+padding: 20px;
+}
 }
