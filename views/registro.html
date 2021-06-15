@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/public/CSS/style.css" rel="stylesheet">
+
+    <!-- Enlace a las fontawesome para utilizar los íconos -->
+    <script src="https://kit.fontawesome.com/de7a83a17a.js" crossorigin="anonymous"></script>
+
+
+    <!-- Enlace a google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Registro</title>
+</head>
+
+<body>
+    <h1 class="login-h1">Crear cuenta</h1>
+
+    <form class="login-form" method="POST" action="/registro">
+
+
+        <label class="texto-inputs" for="nombre">Nombre y apellido</label>
+        <div class="div-input">
+            <i class="far fa-user"></i>
+            <input type="text" name="nombre" class="login-data" id="nombre" placeholder="Nombre" required>
+            <!-- required lo hace obligatorio -->
+        </div>
+
+        <label class="texto-inputs" for="nombreusuario">Nombre de usuario</label>
+        <div class="div-input">
+            <i class="far fa-user"></i>
+            <input type="text" name="nombreusuario" class="login-data" id="nombreusuario"
+                placeholder="Nombre de usuario" required>
+            <!-- required lo hace obligatorio -->
+        </div>
+
+        <label class="texto-inputs" for="email">Correo Electrónico</label>
+        <div class="div-input">
+            <i class="fas fa-at"></i>
+            <input type="email" name="email" class="login-data" id="email" placeholder="Correo" required>
+            <!-- required lo hace obligatorio -->
+        </div>
+
+        <label class="texto-inputs" for="password">Contraseña</label>
+        <div class="div-input">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" id="password" class="login-data" placeholder="Contraseña" required>
+        </div>
+
+        <label class="texto-inputs" for="password2">Confirmar contraseña</label>
+        <div class="div-input">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password2" id="password2" class="login-data" placeholder="Confirmar contraseña"
+                required>
+        </div>
+
+        <label class="texto-inputs" for="domicilio">Domicilio</label>
+        <div class="div-input">
+            <i class="far fa-user"></i>
+            <input type="text" name="domicilio" class="login-data" id="domicilio" placeholder="Domicilio" required>
+            <!-- required lo hace obligatorio -->
+        </div>
+
+        <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" value="1990-01-01" min="1900-01-01"
+            max="2020-01-01">
+
+        <p>Tipo de perfil:</p>
+
+        <div>
+            <input type="radio" id="comprador" name="tipo-perfil" value="comprador" checked>
+            <label for="comprador">Comprador</label>
+        </div>
+
+        <div>
+            <input type="radio" id="Vendedor" name="tipo-perfil" value="Vendedor">
+            <label for="Vendedor">Vendedor</label>
+        </div>
+
+
+        <div>
+            <label for="foto-perfil">Sube una foto de perfil:</label>
+            <input type="file" id="foto-perfil" name="foto-perfil" accept="image/png, image/jpeg">
+        </div>
+
+        <button type="submit" class="submit-btn">Registrarse</button>
+        <button type="reset" class="submit-btn">Borrar</button>
+    </form>
+    <p class="texto-registro">¿Ya tienes una cuenta?</p>
+    <a class="link-registro" href="#">Inicia sesión</a>
+
+
+</body>
+
+</html>

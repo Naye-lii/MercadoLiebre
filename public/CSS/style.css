@@ -24,7 +24,7 @@ a{
     text-decoration: none;
 }
 
-/* Formulario */
+/* Formulario  crear producto */
 .create-form{
     padding: 20px 15px;
 }
@@ -52,4 +52,85 @@ a{
     color: #ffffff;
     padding: 5px 10px;
     border-radius: 5px;
+}
+
+
+/* Login */
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;;
+}
+
+h1.login-h1{
+
+    text-align: center;
+    font-style: italic;
+}
+label.texto-inputs{
+    display: none;
+    margin: 0px;
+
+}
+
+.login-form{
+    text-align: center;
+}
+
+.div-input{
+    border: 2px solid #E57D0C;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 10px;
+
+}
+
+.login-data{
+    border: none;
+    padding: 0px 0px 0px 5px;
+    width: 80%;
+}
+
+.no-password{
+    display: block;
+    margin-left: 40%;
+
+}
+
+.texto-registro{
+    text-align: center;
+    margin-block-end: 0;
+
+}
+
+.link-registro{
+    display: block;
+    text-align: center;
+}
+
+a.link-registro{
+    color:#FFD522;
+
+}
+
+a.no-password{
+    color:#A6AAAD;
+font-size: 10px;
+
+}
+
+button.submit-btn{
+    color: white;
+    background-color: #000000;
+    margin-top: 15px;
+    padding: 5px 8px;
+    transition-duration: 0.4s;
+    border: 2px solid #fff159;
+}
+
+i{
+      color:#A6AAAD;
+      font-size: 14px;
 }
