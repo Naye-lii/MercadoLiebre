@@ -3,96 +3,59 @@
   <head>
     <meta charset = 'utf-8'>
     <meta name = "viewport" content = "width=device-width, initial-scale=0.1">
-    <link href = "/CSS/style.css" rel = "stylesheet" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
     <script src="https://kit.fontawesome.com/0867809370.js" crossorigin="anonymous"></script>
+   
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href = "/CSS/style.css" rel = "stylesheet" >
     <title>Mercado Libre (practica)</title>
+
   </head>
+
   <body>
-  <header class="main-header">
-    <div class="main-header-top-bar">
-    <img class="logo" src = '/img/logo-mercado-liebre.svg' alt='Logo Mercado Libre'>
-    <input type="search">
-    <h2 class=copy-header>
-    <h2>Comprá en cuota y sin targeta de crédito</h2>
-  </h2>
-  <a href="#" class="hamburger-buttom">
-    <i class="fa fa-bars"></i>
-  </a>
-    <nav class="main-header-bottom-bar">
-      <ul class="left-navbar">
+  <!--Empieza encabezado-->
+  <header>
+  <!--Psrte que contiene el logo, la barra de busqueda y promo-->  
+    <div class="top-header">
+      <img class="logo" src = '/img/logo-mercado-liebre.svg' alt='Logo Mercado Libre'>
+      <div class="promo">
+        <input class="barra-buscar" type="search" placeholder="Buscar prodictos">
+        <button class="boton-buscar">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <p><i class="fas fa-hand-holding-usd"></i>   Comprá en cuota y sin targeta de crédito</p>
+    </div>
+  
+    <!--Boton de hamburguesa-->
+    <div class="hamburger-buttom">
+      <label for="show-menu">
+        <i class="fa fa-bars"></i></label>
+    </div>
+    <!--Checkbox que permite mostrar y ocultar la lista del menu-->
+    <input type="checkbox" id="show-menu" hidden>
+    <!--Seccion en el que se encuetran las listas del menu-->
+    <div class="navbar-menu">
+      <!--Menu derecho-->
+      <ul class="navbar-left">
         <li><a href="#ofertas">Ofertas</a></li>
         <li><a href="#tiendas oficiales">Tiendas Oficiales</a></li>
         <li><a href="#vender">Vender</a></li>
         <li><a href="#ayuda">Ayuda</a></li>        
       </ul>
-   
-      <ul class="right-navbar">
-        <li><a href="#creá tu cuenta">Creá tu cuenta <i class="far fa-credit-card"></i></a></li>
-        <li><a href="#ingresa">Ingresa</a></li>
-        <li><a href="#mis compras">Mis compras</a></li>     
+      <!--Menu izquierdo-->
+      <ul class="navbar-right">
+        <li><a href="#creá tu cuenta">Creá tu cuenta</a>   <i class="far fa-id-card"></i> </li>
+        <li><a href="#ingresa">Ingresa</a>   <i class="fas fa-sign-in-alt"></i></li>
+        <li><a href="#mis compras">Mis compras</a>   <i class="fas fa-shopping-basket"></i></li>     
       </ul>
-    </nav>
+    </div> 
   </header>
-  <main>
-    <section>
-      <img class="banner" src = '/img/img-home-banner.jpg' alt='Cobra con todas las tarjetas'>
-    </section>
-    
-    
-    <section class="sec-producto" id="ultima visita">
 
-    <h1>Basado en tu última visita</h1>
-    <img class="img-productos" src = '/img/img-cafetera-moulinex.jpg' alt='Cafetera moulinex'>
-    <h4>$6.770</h4>
-    <h3>40% off</h3>
-    <h4>Cafetera moulinex</h4>
 
-    <img class="img-productos" src = '/img/img-macbook-pro-2019.jpg' alt='macbook pro 2019'>
-    <h4>$230.000</h4>
-    <h3>20% off</h3>
-    <h4>MacBook Pro 2019</h4>
-
-    <img class="img-productos" src = '/img/img-samsung-galaxy-s10.jpg' alt='Samsung galaxy s10'>
-    <h4>$70.500</h4>
-    <h3>10% off</h3>
-    <h4>Samsung Galaxy S10</h4>
-
-    <img class="img-productos" src = '/img/img-tv-samsung-smart' alt='Smart tv samsung'>
-    <h4>$23.200</h4>
-    <h3>5% off</h3>
-    <h4>SmartTv Samsung 43"</h4>
-
-    </section>
-
-    <section id="ofertas">
-
-      <h1>Ofertas</h1>
-      <img class="img-productos" src = '/img/img-cafetera-moulinex.jpg' alt='Cafetera moulinex'>
-      <h4>$6.770</h4>
-      <h3>40% off</h3>
-      <h4>Cafetera moulinex</h4>
-  
-      <img class="img-productos" src = '/img/img-macbook-pro-2019.jpg' alt='macbook pro 2019'>
-      <h4>$230.000</h4>
-      <h3>20% off</h3>
-      <h4>MacBook Pro 2019</h4>
-  
-      <img class="img-productos" src = '/img/img-samsung-galaxy-s10.jpg' alt='Samsung galaxy s10'>
-      <h4>$70.500</h4>
-      <h3>10% off</h3>
-      <h4>Samsung Galaxy S10</h4>
-  
-      <img class="img-productos" src = '/img/img-tv-samsung-smart' alt='Smart tv samsung'>
-      <h4>$23.200</h4>
-      <h3>5% off</h3>
-      <h4>SmartTv Samsung 43"</h4>
-
-      </section>
-
-  </main>
-</body>
   <footer>
     <ul>
       <li><h4>Pagá con tarjeta o en efectivo</h4> <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es segurao!</p></li>
@@ -101,4 +64,6 @@
       <li><h4>Copyright © 1999-2020 MercadoLiebre</h4></li>
     </ul>
   </footer>
+  
+</body>
 </html>

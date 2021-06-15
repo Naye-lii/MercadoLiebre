@@ -1,113 +1,188 @@
-* {
+*{
     box-sizing: border-box;
 }
 
 body{
     font-family: 'Roboto', sans-serif; 
+    margin: 0;
+    padding: 0;
+    width: 100vw;
 }
 
-.main-header {
+main{
+    padding-top: 40vw;
+}
+/* Empieza el estilo del encabezado en modo responsive*/
+header {
     background-color: #EAC926;
-    padding: 20px;
+    width: 100vw;
+    padding-bottom: 10px;
+    position: fixed;
+    margin: 0;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .hamburger-buttom{
-    background-color: #03264C;
-    color: white;
-    display: block;
-    max-width: 100px;
-    padding: 15px 0;
-    border-radius: 8px;
-    text-align: center;
-    font-size: 18px;
+    background-color: #1259c3;
+    color: #fff;
+    width: 30px;
+    height: 30px;
     margin: auto;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.navbar-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display:none;
+}
+
+.navbar-menu ul{
+    background-color: #1259c3;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    width: 100vw;
+}
+
+.navbar-left{
+    position: absolute;
+    top: 130px;
+}
+
+.navbar-right{
+    position: absolute;
+    top: 275px;
+}
+
+.navbar-menu > ul > li {
+    border: #fff 1px solid;
+    color: #fff;
+    height: 35px;
+    padding-top: 5px;
+}
+
+.navbar-menu > ul > li > a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}
+
+
+input[type="checkbox"]:checked + .navbar-menu{
+    display: block;
+}
+
+.top-header{
+    width: 100vw;
+    display: flex;
+    justify-content:center ;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin: 0;
+}
+.promo{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo {
-    width: 250px;
+    width: 120px;
+}
+.barra-buscar{
+    width: 40vw;
+    height: 35px;
+    color: #666;
+    border-radius: 5px 0 0 5px;
+    border-style: none;
+    margin-left: 20px;
 }
 
-.copy-header {
-    font-weight: 400;
+.boton-buscar{
+    width: 35px;
+    height: 35px;
+    background-color: #fff;
+    box-shadow: none;
+    border-radius: 0 5px 5px 0;
+    border-style: none;
+    margin-right: 20px;
 }
+/* Termina estilo del encabezado*/
 
-.main-navbar ul{
-    display: none;
-}
 
-.main-navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
 
-.main-navbar a {
-    text-decoration: none;
-    color: #222222;
-    display: inline-block;
-    padding: 5px 0;
-    font-size: 17px;
-}
-
-p{
-color: black;
-}
-
-@media (min-width: 768px) {
-    .main-header-top-bar {
-        display: flex;
-justify-content: space-between;
+@media (min-width: 700px) {
+    /* Estilo del encabezado*/
+    header{
+        position: inherit;
+    }
+    main{
+        margin-top: 5vw;
+        box-sizing: border-box;
     }
 
-    .copy-header{
-        max-width: 350px;
-        text-align: right;
+    .navbar-menu {
+        display: flex;
+        align-items:stretch ;
+        background-color: #EAC926;
+        margin-top: 20px;
+    }
+
+    header{
+        padding-bottom: 0;
+    }
+
+    .navbar-menu{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-menu > ul{
+        width:fit-content;
+        padding-left: 20px;
+        background-color: #EAC926;
+        position:inherit;
+    }
+    
+    .navbar-menu > ul > li{
+        display:inline-block;
+        width:fit-content;
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        background-color: #EAC926;
+        color: black;
+        border: #EAC926 solid;
+    }
+
+    .navbar-menu > ul > li > a {
+        color: black;
+    }
+    
+    .navbar-right, .navbar-left{
+        margin: 0;
+    }
+
+    .top-header{
+        justify-content: space-around;
+    }
+
+
+
+    .hamburger-buttom > label{
+        display: none;
     }
 
     .hamburger-buttom{
         display: none;
     }
-
-    .main-navbar{
-        display: flex;
-    }
-    .main-navbar > ul{
-        display: flex;
-    }
-    .main-navbar > li{
-        margin: 5px;
-    }
-}
-
-@media (min-width: 1200px) {
-.main-header-top-bar, .main-navbar {
-    max-width: 1200px;
-    margin: auto;
-}
-
-.main-header-top-bar {
-    align-items: center;
-    margin: 0;
-}
-
-.copy-header{
-    max-width: none;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-.main-navbar  {
-    margin: 10px;
-}
-
-.main-navbar > li {
-margin: 0 10px;
-}
-
-.main-navbar > a {
-   font-size: 19px; 
-}
-
+    /* Termina estilo del encabezado */
 
 }
