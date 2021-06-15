@@ -4,34 +4,37 @@
     <meta charset = 'utf-8'>
     <meta name = "viewport" content = "width=device-width, initial-scale=0.1">
     <link href = "/CSS/style.css" rel = "stylesheet" >
-
+    <script src="https://kit.fontawesome.com/0867809370.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <title>Mercado Libre (practica)</title>
   </head>
-  
-  <header>
-
+  <body>
+  <header class="main-header">
+    <div class="main-header-top-bar">
     <img class="logo" src = '/img/logo-mercado-liebre.svg' alt='Logo Mercado Libre'>
     <input type="search">
-    <h3>Comprá en cuota y sin targeta de crédito</h3>
-
-    <section>
-      <ul>
+    <h2 class=copy-header>
+    <h2>Comprá en cuota y sin targeta de crédito</h2>
+  </h2>
+  <a href="#" class="hamburger-buttom">
+    <i class="fa fa-bars"></i>
+  </a>
+    <nav class="main-header-bottom-bar">
+      <ul class="left-navbar">
         <li><a href="#ofertas">Ofertas</a></li>
         <li><a href="#tiendas oficiales">Tiendas Oficiales</a></li>
         <li><a href="#vender">Vender</a></li>
         <li><a href="#ayuda">Ayuda</a></li>        
       </ul>
-    </section>
-
-    <section>
-      <ul>
-        <li><a href="#creá tu cuenta">Creá tu cuenta</a></li>
+   
+      <ul class="right-navbar">
+        <li><a href="#creá tu cuenta">Creá tu cuenta <i class="far fa-credit-card"></i></a></li>
         <li><a href="#ingresa">Ingresa</a></li>
         <li><a href="#mis compras">Mis compras</a></li>     
       </ul>
-    </section>
+    </nav>
   </header>
-
   <main>
     <section>
       <img class="banner" src = '/img/img-home-banner.jpg' alt='Cobra con todas las tarjetas'>
@@ -89,7 +92,7 @@
       </section>
 
   </main>
-
+</body>
   <footer>
     <ul>
       <li><h4>Pagá con tarjeta o en efectivo</h4> <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es segurao!</p></li>
