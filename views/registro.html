@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/public/CSS/style.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 
     <!-- Enlace a las fontawesome para utilizar los íconos -->
     <script src="https://kit.fontawesome.com/de7a83a17a.js" crossorigin="anonymous"></script>
@@ -66,17 +66,19 @@
             <!-- required lo hace obligatorio -->
         </div>
 
-        <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+        <div class="div-foto-perfil">
+            <label for="foto-perfil" class="texto-extra">Foto de perfil:</label> <br>
+            <input type="file" id="foto-perfil" name="foto-perfil" accept="image/png, image/jpeg">
+        </div>
+
+        <label for="fecha-nacimiento" class="texto-extra">Fecha de nacimiento:</label><br>
 
         <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" value="1990-01-01" min="1900-01-01"
             max="2020-01-01">
 
-        <div>
-            <label for="foto-perfil">Sube una foto de perfil:</label>
-            <input type="file" id="foto-perfil" name="foto-perfil" accept="image/png, image/jpeg">
-        </div>
 
-        <p>Tipo de perfil:</p>
+
+        <p class="texto-extra">Tipo de perfil:</p>
 
         <div>
             <input type="radio" id="comprador" name="tipo-perfil" value="comprador" checked>
@@ -88,27 +90,37 @@
             <label for="Vendedor">Vendedor</label>
         </div>
 
-        <p>Intereses:</p>
+        <p class="texto-extra">Intereses:</p>
 
-        <label>
-            <input type="checkbox" id="electronica" value="electronica">
-            Electronica</label><br>
+        <div class="opcion-checkbox">
+            <label>
+                <input type="checkbox" id="electronica" value="electronica">
+                Electronica</label>
+        </div>
 
-        <label>
-            <input type="checkbox" id="moda" value="moda">
-            Moda</label><br>
+        <div class="opcion-checkbox">
+            <label>
+                <input type="checkbox" id="moda" value="moda">
+                Moda</label>
+        </div>
 
-        <label>
-            <input type="checkbox" id="hogat" value="hogar">
-            Hogar</label><br>
+        <div class="opcion-checkbox">
+            <label>
+                <input type="checkbox" id="hogat" value="hogar">
+                Hogar</label>
+        </div>
 
-        <label>
-            <input type="checkbox" id="jugueteria" value="jugueteria">
-            Juguetería</label><br>
+        <div class="opcion-checkbox">
+            <label>
+                <input type="checkbox" id="jugueteria" value="jugueteria">
+                Juguetería</label>
+        </div>
 
-        <label>
-            <input type="checkbox" id="vida-sana" value="vida-sana">
-            Vida sana</label><br>
+        <div class="opcion-checkbox">
+            <label>
+                <input type="checkbox" id="vida-sana" value="vida-sana">
+                Vida sana</label>
+        </div>
 
 
 
@@ -117,7 +129,7 @@
         <button type="reset" class="submit-btn">Borrar</button>
     </form>
     <p class="texto-registro">¿Ya tienes una cuenta?</p>
-    <a class="link-registro" href="#">Inicia sesión</a>
+    <a class="link-registro" href="/views/login.html">Inicia sesión</a>
 
 
 </body>

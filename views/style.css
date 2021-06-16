@@ -62,6 +62,10 @@ a{
     font-family: 'Roboto', sans-serif;;
 }
 
+body{
+    background-color: #ebebeb;
+}
+
 h1.login-h1{
 
     text-align: center;
@@ -78,13 +82,12 @@ label.texto-inputs{
 }
 
 .div-input{
-    border: 2px solid #E57D0C;
     border-radius: 5px;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     margin-bottom: 10px;
-
+background-color: white;
 }
 
 .login-data{
@@ -111,7 +114,7 @@ label.texto-inputs{
 }
 
 a.link-registro{
-    color:#FFD522;
+    color:#eac926;
 
 }
 
@@ -123,14 +126,42 @@ font-size: 10px;
 
 button.submit-btn{
     color: white;
-    background-color: #000000;
+    background-color: #03264c;
     margin-top: 15px;
     padding: 5px 8px;
     transition-duration: 0.4s;
-    border: 2px solid #fff159;
 }
 
 i{
       color:#A6AAAD;
       font-size: 14px;
 }
+
+#fecha-nacimiento{
+    margin: 15px auto;
+}
+
+.texto-extra{
+    margin: 20px auto;
+    font-weight: 800;
+}
+
+.opcion-checkbox{
+    text-align: left;
+    margin-top: 5px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+}
+ #foto-perfil{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 20px auto;
+ }
+
+ .div-foto-perfil{
+     margin-top: 20px;
+     margin-bottom: 10px;
+ }
