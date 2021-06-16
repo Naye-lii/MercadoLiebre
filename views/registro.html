@@ -71,6 +71,11 @@
         <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" value="1990-01-01" min="1900-01-01"
             max="2020-01-01">
 
+        <div>
+            <label for="foto-perfil">Sube una foto de perfil:</label>
+            <input type="file" id="foto-perfil" name="foto-perfil" accept="image/png, image/jpeg">
+        </div>
+
         <p>Tipo de perfil:</p>
 
         <div>
@@ -83,11 +88,30 @@
             <label for="Vendedor">Vendedor</label>
         </div>
 
+        <p>Intereses:</p>
 
-        <div>
-            <label for="foto-perfil">Sube una foto de perfil:</label>
-            <input type="file" id="foto-perfil" name="foto-perfil" accept="image/png, image/jpeg">
-        </div>
+        <label>
+            <input type="checkbox" id="electronica" value="electronica">
+            Electronica</label><br>
+
+        <label>
+            <input type="checkbox" id="moda" value="moda">
+            Moda</label><br>
+
+        <label>
+            <input type="checkbox" id="hogat" value="hogar">
+            Hogar</label><br>
+
+        <label>
+            <input type="checkbox" id="jugueteria" value="jugueteria">
+            Juguetería</label><br>
+
+        <label>
+            <input type="checkbox" id="vida-sana" value="vida-sana">
+            Vida sana</label><br>
+
+
+
 
         <button type="submit" class="submit-btn">Registrarse</button>
         <button type="reset" class="submit-btn">Borrar</button>
