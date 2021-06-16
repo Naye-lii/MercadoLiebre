@@ -18,6 +18,48 @@
 </head>
 
 <body>
+
+    <!--Empieza encabezado-->
+    <header>
+        <!--Psrte que contiene el logo, la barra de busqueda y promo-->
+        <div class="top-header">
+            <img class="logo" src='/img/logo-mercado-liebre.svg' alt='Logo Mercado Libre'>
+            <div class="promo">
+                <input class="barra-buscar" type="search" placeholder="Buscar prodictos">
+                <button class="boton-buscar">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <p><i class="fas fa-hand-holding-usd"></i> Comprá en cuota y sin targeta de crédito</p>
+        </div>
+
+        <!--Boton de hamburguesa-->
+        <div class="hamburger-buttom">
+            <label for="show-menu">
+                <i class="fa fa-bars"></i></label>
+        </div>
+        <!--Checkbox que permite mostrar y ocultar la lista del menu-->
+        <input type="checkbox" id="show-menu" hidden>
+        <!--Seccion en el que se encuetran las listas del menu-->
+        <div class="navbar-menu">
+            <!--Menu derecho-->
+            <ul class="navbar-left">
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#tiendas oficiales">Tiendas Oficiales</a></li>
+                <li><a href="#vender">Vender</a></li>
+                <li><a href="#ayuda">Ayuda</a></li>
+            </ul>
+            <!--Menu izquierdo-->
+            <ul class="navbar-right">
+                <li><a href="#creá tu cuenta">Creá tu cuenta</a> <i class="far fa-id-card"></i> </li>
+                <li><a href="#ingresa">Ingresa</a> <i class="fas fa-sign-in-alt"></i></li>
+                <li><a href="#mis compras">Mis compras</a> <i class="fas fa-shopping-basket"></i></li>
+            </ul>
+        </div>
+    </header>
+
+
+
     <h1 class="login-h1">Iniciar sesión</h1>
     <form class="login-form" method="GET" action="/login">
 
