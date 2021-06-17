@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset = 'utf-8'>
+        <meta name = "viewport" content = "width=device-width, initial-scale=0.1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        
+        <script src="https://kit.fontawesome.com/0867809370.js" crossorigin="anonymous"></script>
+       
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href = "/CSS/style.css" rel = "stylesheet" >
+        <title>Mercado Libre (practica)</title>
+    
+    </head>
+    
+    <body>
+      <!--Empieza encabezado-->
+      <header>
+      <!--Psrte que contiene el logo, la barra de busqueda y promo-->  
+        <div class="top-header">
+          <img class="logo" src = '/img/logo-mercado-liebre.svg' alt='Logo Mercado Libre'>
+          <div class="promo">
+            <input class="barra-buscar" type="search" placeholder="Buscar prodictos">
+            <button class="boton-buscar">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <p><i class="fas fa-hand-holding-usd"></i>   Comprá en cuota y sin targeta de crédito</p>
+        </div>
+      
+        <!--Boton de hamburguesa-->
+        <div class="hamburger-buttom">
+          <label for="show-menu">
+            <i class="fa fa-bars"></i></label>
+        </div>
+        <!--Checkbox que permite mostrar y ocultar la lista del menu-->
+        <input type="checkbox" id="show-menu" hidden>
+        <!--Seccion en el que se encuetran las listas del menu-->
+        <div class="navbar-menu">
+          <!--Menu derecho-->
+          <ul class="navbar-left">
+            <li><a href="#ofertas">Ofertas</a></li>
+            <li><a href="#tiendas oficiales">Tiendas Oficiales</a></li>
+            <li><a href="#vender">Vender</a></li>
+            <li><a href="#ayuda">Ayuda</a></li>        
+          </ul>
+          <!--Menu izquierdo-->
+          <ul class="navbar-right">
+            <li><a href="/registro">Creá tu cuenta</a>   <i class="far fa-id-card"></i> </li>
+            <li><a href="/login">Ingresa</a>   <i class="fas fa-sign-in-alt"></i></li>
+            <li><a href="#mis compras">Mis compras</a>   <i class="fas fa-shopping-basket"></i></li>     
+          </ul>
+        </div> 
+      </header>  
+
+        <!--Empieza seccion de registro-->
+    <section class="sec-form">
+        <h1 class="login-h1">Crear cuenta</h1>
+
+        <form class="login-form" method="POST" action="/registro">
+
+
+            <label class="texto-inputs" for="nombre">Nombre y apellido</label>
+            <div class="div-input">
+                <i class="far fa-user"></i>
+                <input type="text" name="nombre" class="login-data" id="nombre" placeholder="Nombre" required>
+            <!-- required lo hace obligatorio -->
+            </div>
+
+            <lab    el class="texto-inputs" for="nombreusuario">Nombre de usuario</label>
+            <div class="div-input">
+                <i class="far fa-user"></i>
+                <input type="text" name="nombreusuario" class="login-data" id="nombreusuario"
+                placeholder="Nombre de usuario" required>
+            <!-- required lo hace obligatorio -->
+            </div>
+
+        <label class="texto-inputs" for="email">Correo Electrónico</label>
+        <div class="div-input">
+            <i class="fas fa-at"></i>
+            <input type="email" name="email" class="login-data" id="email" placeholder="Correo" required>
+            <!-- required lo hace obligatorio -->
+        </div>
+
+        <label class="texto-inputs" for="password">Contraseña</label>
+        <div class="div-input">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" id="password" class="login-data" placeholder="Contraseña" required>
+        </div>
+
+        <label class="texto-inputs" for="password2">Confirmar contraseña</label>
+        <div class="div-input">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password2" id="password2" class="login-data" placeholder="Confirmar contraseña"
+                required>
+        </div>
+
+        <label class="texto-inputs" for="domicilio">Domicilio</label>
+        <div class="div-input">
+            <i class="far fa-user"></i>
+            <input type="text" name="domicilio" class="login-data" id="domicilio" placeholder="Domicilio" required>
+            <!-- required lo hace obligatorio -->
+        </div>
+
+        <div class="div-foto-perfil">
+            <label for="foto-perfil" class="texto-extra">Foto de perfil:</label> <br>
+            <input type="file" id="foto-perfil" name="foto-perfil" accept="image/png, image/jpeg">
+        </div>
+
+        <label for="fecha-nacimiento" class="texto-extra">Fecha de nacimiento:</label><br>
+
+        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" value="1990-01-01" min="1900-01-01"
+            max="2020-01-01">
+
+
+
+        <p class="texto-extra">Tipo de perfil:</p>
+
+        <div>
+            <input type="radio" id="comprador" name="tipo-perfil" value="comprador" checked>
+            <label for="comprador">Comprador</label>
+        </div>
+
+        <div>
+            <input type="radio" id="Vendedor" name="tipo-perfil" value="Vendedor">
+            <label for="Vendedor">Vendedor</label>
+        </div>
+
+        <p class="texto-extra">Intereses:</p>
+
+        <div class="opcion-checkbox">
+            <label>
+                <input type="checkbox" id="electronica" value="electronica">
+                Electronica</label>
+        </div>
+
+        <div class="opcion-checkbox">
+            <label>
+                <input type="checkbox" id="moda" value="moda">
+                Moda</label>
+        </div>
+
+        <div class="opcion-checkbox">
+            <label>
+                <input type="checkbox" id="hogat" value="hogar">
+                Hogar</label>
+        </div>
+
+        <div class="opcion-checkbox">
+            <label>
+                <input type="checkbox" id="jugueteria" value="jugueteria">
+                Juguetería</label>
+        </div>
+
+        <div class="opcion-checkbox">
+            <label>
+                <input type="checkbox" id="vida-sana" value="vida-sana">
+                Vida sana</label>
+        </div>
+
+
+
+
+        <button type="submit" class="submit-btn">Registrarse</button>
+        <button type="reset" class="submit-btn">Borrar</button>
+    </form>
+        <p class="texto-registro">¿Ya tienes una cuenta?</p>
+        <a class="link-registro" href="/views/login.html">Inicia sesión</a>
+    </section>
+
+
+</body>
+
+</html>

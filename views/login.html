@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset = 'utf-8'>
+        <meta name = "viewport" content = "width=device-width, initial-scale=0.1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        
+        <script src="https://kit.fontawesome.com/0867809370.js" crossorigin="anonymous"></script>
+       
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href = "/CSS/style.css" rel = "stylesheet" >
+        <title>Mercado Libre (practica)</title>
+    
+      </head>
+
+<body>
+
+    <!--Empieza encabezado-->
+  <header>
+    <!--Psrte que contiene el logo, la barra de busqueda y promo-->  
+      <div class="top-header">
+        <img class="logo" src = '/img/logo-mercado-liebre.svg' alt='Logo Mercado Libre'>
+        <div class="promo">
+          <input class="barra-buscar" type="search" placeholder="Buscar prodictos">
+          <button class="boton-buscar">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+        <p><i class="fas fa-hand-holding-usd"></i>   Comprá en cuota y sin targeta de crédito</p>
+      </div>
+    
+      <!--Boton de hamburguesa-->
+      <div class="hamburger-buttom">
+        <label for="show-menu">
+          <i class="fa fa-bars"></i></label>
+      </div>
+      <!--Checkbox que permite mostrar y ocultar la lista del menu-->
+      <input type="checkbox" id="show-menu" hidden>
+      <!--Seccion en el que se encuetran las listas del menu-->
+      <div class="navbar-menu">
+        <!--Menu derecho-->
+        <ul class="navbar-left">
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#tiendas oficiales">Tiendas Oficiales</a></li>
+          <li><a href="#vender">Vender</a></li>
+          <li><a href="#ayuda">Ayuda</a></li>        
+        </ul>
+        <!--Menu izquierdo-->
+        <ul class="navbar-right">
+          <li><a href="/registro">Creá tu cuenta</a>   <i class="far fa-id-card"></i> </li>
+          <li><a href="/login">Ingresa</a>   <i class="fas fa-sign-in-alt"></i></li>
+          <li><a href="#mis compras">Mis compras</a>   <i class="fas fa-shopping-basket"></i></li>     
+        </ul>
+      </div> 
+    </header>  
+
+    <!--Empieza login-->
+<section class="sec-form">
+    <h1 class="login-h1">Iniciar sesión</h1>
+    <form class="login-form" method="GET" action="/login">
+
+        <label class="texto-inputs" for="usuario">Nombre de usuario</label>
+        <div class="div-input">
+            <i class="far fa-user"></i>
+            <input type="text" name="usuario" id="usuario" class="login-data" placeholder="Nombre de usuario" required>
+            <!-- required lo hace obligatorio -->
+        </div>
+
+
+        <label class="texto-inputs" for="password">Contraseña</label>
+        <div class="div-input">
+            <i class="fas fa-lock"></i>
+            <input type="password" name="password" class="login-data" id="password" placeholder="Contraseña" required>
+        </div>
+        <a class="no-password" href="#">¿Olvidaste tu contraseña?</a>
+
+        <button type="submit" class="submit-btn">Ingresar</button>
+    </form>
+    <p class="texto-registro">¿No tienes una cuenta?</p>
+    <a class="link-registro" href="#">Registrate</a>
+</section>
+
+</body>
+
+</html>
