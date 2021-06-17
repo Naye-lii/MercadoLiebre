@@ -439,7 +439,9 @@ button.submit-btn{
     /* Estilo del encabezado*/
     header{
         position: inherit;
+        padding-right: 10px;
     }
+
     main{
         margin-top: 5px;
         box-sizing: border-box;
@@ -538,5 +540,3 @@ button.submit-btn{
     } 
 
 }
-
-
