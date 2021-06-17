@@ -16,10 +16,12 @@ header {
     width: 100vw;
     padding-bottom: 10px;
     position: fixed;
-    top:0;
+    z-index: 10;
+    top:0.1px;
     margin: 0;
     padding-right: 0;
     padding-left: 0;
+    box-sizing: border-box;
 }
 
 .hamburger-buttom{
@@ -266,6 +268,171 @@ button.submit-btn{
      margin-bottom: 10px;
  }
 
+ /*Aquí comienzan los estilos para los productos*/
+
+.banner{
+    width: 100vw;
+    margin-top: 150px;
+}
+
+.img-productos {
+    margin-left:5vw;
+    width: 90vw;
+}
+
+.sec-producto, .visita {
+    width: 100vw;
+    margin-top: 20px; 
+    margin-bottom: 20px;   
+}
+
+.visita > h2, .cont-ofertas >h2{
+    font-size: 25px;
+    text-align: center;
+    width: 100vw;
+}
+
+.datos-producto{
+    width: 90vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5vw;
+    background-color: #ffffff;
+}
+
+.datos-producto > h2{
+    display: none;
+}
+
+.datos-producto h3{
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    width: 90px;
+}
+
+.datos-producto h4{
+    color: #32cd32;
+    font-size: 16px;
+    font-weight: 400;
+    margin-block-end: 1em;
+    margin-block-start: 1em;
+    width: 100px;
+}
+
+.carrito{
+    color: #32cd32;
+    border: #32cd32 solid 2px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 2px;
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    bottom: 65px;
+    left: 85%;
+}
+
+.sec-oferta{
+    margin-bottom: 40px;
+}
+.sec-oferta > .datos-producto {
+    flex-direction: column;
+}
+
+.sec-oferta > .datos-producto > h2{
+    color: #000;
+    padding: 15px 0 15px 20px;
+    margin: 0;
+    font-size: 18px;
+    display: block;
+}
+
+.sec-oferta > .datos-producto > h3{
+    color: #000;
+    margin: 0;
+    padding: 10px 0 0 20px;
+    width: fit-content;
+    font-size: 18px;
+}
+.sec-oferta > .datos-producto > h4{
+    color: #32cd32;
+    margin: 0;
+    padding: 10px 0 0 20px;
+    width: fit-content;
+    font-size: 18px;
+}
+
+.sec-oferta > .datos-producto > .carrito{
+    position: inherit;
+    padding: 3px 12px 12px 3px;
+    margin: 10px 0 10px 20px;
+}
+
+/*Aquí comienza el footer*/
+
+.left, .middle, .right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 0;
+}
+
+.container i{
+    width: 90vw;
+    height: auto;
+    text-align: center;
+    color:midnightblue;
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+}
+
+.container ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+.container h4{
+    font-size: 24;
+    color: black;
+    font-weight: 600;
+    text-align: center;
+    width: 90vw;
+    margin: 0;
+}
+
+.container p{
+    font-size: 12px;
+    color: black;
+    font-weight: 350;
+    text-align: center;
+    width: 90vw;
+    margin: 0;
+}
+
+.copywright{
+    color: #444444; 
+    font-weight: 300;
+    text-align: center;
+    padding: 0;
+}
+
 
 
 @media (min-width: 700px) {
@@ -274,7 +441,7 @@ button.submit-btn{
         position: inherit;
     }
     main{
-        margin-top: 5vw;
+        margin-top: 5px;
         box-sizing: border-box;
     }
 
@@ -338,6 +505,37 @@ button.submit-btn{
     .sec-form{
         margin:  0 0 50px 0;
     }
+
+    /*Empieza estilo home*/
+
+
+    .banner{
+        margin-top: 0;
+    }
+
+    .visita, .cont-ofertas{
+        display: flex;
+        width: 100vw;
+        flex-wrap: wrap;
+        justify-content:space-around;
+
+    }
+
+    .img-productos{
+        width: 25vw;
+        margin: 0;
+    }
+
+    .sec-producto, .sec-oferta{
+        width: 25vw;
+        margin: 20px;
+
+    }
+
+    .datos-producto{
+        width: 25vw;
+        margin: 0;
+    } 
 
 }
 
